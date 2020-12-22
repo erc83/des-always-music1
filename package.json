@@ -1,0 +1,17 @@
+{
+  "name": "a-always-music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.6",
+    "pg": "^8.5.1",
+    "yargs": "^16.2.0"
+  }
+}
