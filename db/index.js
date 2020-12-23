@@ -9,10 +9,8 @@ const config = {
 }
 
 const pool = new Pool(config)
-
+// de esta forma se puede utilizar async y await 
 module.exports = {
-    query: (text, args, callback) => {
-        return pool.query(text, args, callback)
-    }, 
-    pool
+    getClient: ()=> pool.connect(), //entrega un cliente pool.conect no se puede modificar  
+    end: ()=> pool.end()
 }
